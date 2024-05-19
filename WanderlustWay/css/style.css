@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Trirong');
+
+:root
+{
+    --white:white;
+    --black:black;
+    --light-color:#D0D4CA;
+    --red:#FF3C00;
+    --greeen:#01742F;
+    --blue:#027499;
+    
+    --box-shadow:0.5rem 1.5rem rgba(0,0,0,.1);
+    --border:2rem   solid rgba(0,0,0.1);
+    --outline: 1rem rgba(0,0,0.1);
+
+}
+
+
+*
+{
+    font-family: 'Poppins', sans-serif; 
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    
+
+}
+body
+{
+    background-color: #eee;
+
+}
+
+section
+{
+   padding: 8rem 9%;
+
+
+}
+.heading
+{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.2rem;
+    color: var(--black);
+
+
+
+
+}
+.heading span
+{
+    color: var(--black);
+}
+.btn
+{   border: 2px solid transparent;
+    margin-top: 1rem;
+    display:inline-block;
+    padding: .8rem 3rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    color: var(--white);
+    cursor: pointer;
+    background: #65B741;
+
+
+    
+
+
+
+}
+.btn:hover
+{
+    background: #527853;
+       
+    color:white;
+    
+}
+.header
+{
+    border: 0px solid;
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9% ;
+    background: color-mix(
+        in oklab, 
+        whitesmoke, 
+        transparent 80%
+      );
+    color:white;
+    box-shadow: var(--light-color);
+
+
+
+
+    
+}
+
+.header .logo 
+{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--white);
+
+}
+.header .logo i
+{
+    color: var(--orange);
+
+}
+.header .navbar a
+{
+    font-size: 2rem;
+    margin: 01rem;
+    color: var(--white);
+    font-weight: bolder;
+    
+
+
+}
+.header .navbar a:hover
+{
+    color:var(--greeen);
+}
+
+.header .icons div
+{
+   
+    color: var(--white);
+    font-size: 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+.header .icons div:hover
+{
+   
+   color:var(--orange);
+
+
+}
+#menu-btn
+{
+    display: none;
+}
+.header .navbar.active 
+{
+    right: 2rem;
+    transition: .4s linear;
+
+}
+
+
+.home
+{   border: 0px solid;
+    display: flex;
+    justify-content: center;
+    background: url(../image/a\ \(1\).jpg);
+    animation: slideshow 12s ease infinite;
+    background-position: center;
+    background-size: cover;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+    text-align: center;
+    
+}
+@keyframes slideshow {
+    0%, 30% {
+        background-image: url(../image/a\ \(2\).jpg);
+    }
+    10% {
+        background-image: url(../image/a\ \(3\).jpg);
+    }
+    
+   
+   
+}
+
+.home h2
+{
+    font-family: "Trirong", serif;
+    font-size: 10rem;
+    text-align: center;
+    color: white;
+}
+
+.home-content
+{
+    text-align: center;
+}
+
+ .home-content p 
+ {
+    font-size: 3rem;
+    color: white;
+ }
+
+ .welcome-content
+ {
+    text-align: center;
+
+ }
+ .welcome-content
+ {
+    font-size: 1.5rem;
+    color: #027499;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif; 
+ }
+ 
+ 
+ .card-section
+ {
+    display: flex;
+    justify-content: center;
+    
+ }
+ 
+
+  /* Styles for the card container */
+  .card {
+    position: relative;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    
+  }
+
+  /* Styles for the card title */
+  .card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  /* Styles for the card content */
+  .card p {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  /* Styles for the card image */
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  /* Styles for the thin ribbon */
+  .ribbon {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 80px; /* Adjust ribbon width as needed */
+    height: 20px; /* Adjust ribbon height as needed */
+    background-color: #FA7070; /* Ribbon color */
+    transform: rotate(360deg);
+    text-align: center;
+    line-height: 20px; /* Adjust line height to vertically center text */
+    color: #fff; /* Ribbon text color */
+    font-weight: bold;
+    font-size: 1rem; /* Adjust font size as needed */
+  }
+
+
+
+
+
+
+@media (max-width:991px)
+{
+    html 
+    {
+        font-size: 55%;
+
+
+    }
+    .header
+    {
+        padding: 2rem;
+    }
+    section
+    {
+        padding: 2rem;
+    }
+
+    
+
+}
+
+@media (max-width: 768px)
+{
+    #menu-btn
+    {
+        display: inline-block;
+
+    }
+    
+    .header .navbar
+    {
+        position: absolute;
+        top:110%;
+        right:-110%;
+        width: 30rem;
+        padding: 5rem;
+        gap:3rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background-color: whitesmoke;
+        text-align: center;
+        color:var(--white);
+
+    }
+    .header .navbar a
+    {
+       font-size: 2rem;
+       margin: 2rem 2.5rem;
+       display: block;
+       color: #027499;
+       gap: 3rem;
+
+    }
+
+    .home h2
+{
+    font-family: "Trirong", serif;
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+}
+
+    .card-section
+ {
+     flex-direction: column;
+    justify-content: center;
+    
+ }
+
+}
+
+@media (max-width: 450px)
+{
+    html 
+    {
+        font-size: 50%;
+
+    }
+    .heading
+    {
+        font-size: 2.5rem;
+    }
+}
